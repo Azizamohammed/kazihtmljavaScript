@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Example Page</title>
+  </head>
+  <body>
+    <h1>Welcome to my Adourable Page</h1>
+    <img src="image2.jpg" alt="Image 2">
+
+  
+    
+    <script>
+      function replaceImagesWithGiphy() {
+        const images = document.querySelectorAll('img');
+        const Url = 'https://media.giphy.com/media/jaqvaWqpKfImQ/giphy.gif';
+        
+
+        images.forEach(image=>{
+            
+            image.src = Url;
+            console.log(image);
+            
+        })
+       
+      }
+      replaceImagesWithGiphy();
+    </script>
+  </body>
+</html>
